@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-invoice.component.scss']
 })
 export class CreateInvoiceComponent {
-
+  constructor() {}
 }
