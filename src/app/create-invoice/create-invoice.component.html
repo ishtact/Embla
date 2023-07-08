@@ -1,13 +1,13 @@
   <div class="w-full bg-white px-10 py-5">
     <div class="md:flex items-baseline justify-between content-center">
       <div class="flex">
-        <h1 tabindex="0" role="heading" aria-label="profile information" class="focus:outline-none text-3xl font-bold text-gray-800 mt-12">Invoice <span class="text-blue-600">#NR 0001/08/2023</span></h1>
+        <h1 tabindex="0" role="heading" aria-label="invoice information" class="focus:outline-none text-3xl font-bold text-gray-800 mt-12">Invoice <span class="text-blue-600">#NR 0001/08/2023</span></h1>
       </div>
       <div class="flex">
        <!-- Code block for button with icon starts -->
-          <a href="javascript: void(0)" class="mx-2 my-2 flex items-center bg-white transition duration-150 ease-in-out hover:border-gray-700 hover:text-gray-600 border-0 border-gray-600 text-gray-500 pl-3 pr-6 py-2 text-sm">
+          <a href="javascript: void(0)" class="mx-2 my-2 flex items-center bg-white transition duration-150 ease-in-out hover:border-gray-700 hover:text-gray-600 border-0 border-gray-600 text-gray-500 py-2 text-xs">
             <span class="h-4 w-4 mr-2">
-              <svg id="copy_icon" height="18" viewBox="0 0 32 32" width="18" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" fill="currentColor"><path d="m27.91 4.09a7.13 7.13 0 0 0 -10.09 0l-3 3a1 1 0 0 0 0 1.42 1 1 0 0 0 1.41 0l3-3a5.13 5.13 0 0 1 7.26 7.26l-5.06 5.06a5.14 5.14 0 0 1 -7.26 0 4.82 4.82 0 0 1 -1-1.49 1 1 0 0 0 -1.82.84 7.2 7.2 0 0 0 1.44 2.07 7.16 7.16 0 0 0 10.09 0l5.06-5.06a7.13 7.13 0 0 0 0-10.09z"/><path d="m15.74 23.52-3 3a5.13 5.13 0 0 1 -7.24-7.28l5.06-5.06a5.14 5.14 0 0 1 7.26 0 4.82 4.82 0 0 1 1 1.49 1 1 0 0 0 1.82-.84 7.14 7.14 0 0 0 -11.49-2.07l-5.06 5.06a7.13 7.13 0 1 0 10.09 10.09l3-3a1 1 0 0 0 0-1.42 1 1 0 0 0 -1.44.03z"/></svg>
+              <svg id="copy_icon" height="16" viewBox="0 0 32 32" width="16" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" fill="currentColor"><path d="m27.91 4.09a7.13 7.13 0 0 0 -10.09 0l-3 3a1 1 0 0 0 0 1.42 1 1 0 0 0 1.41 0l3-3a5.13 5.13 0 0 1 7.26 7.26l-5.06 5.06a5.14 5.14 0 0 1 -7.26 0 4.82 4.82 0 0 1 -1-1.49 1 1 0 0 0 -1.82.84 7.2 7.2 0 0 0 1.44 2.07 7.16 7.16 0 0 0 10.09 0l5.06-5.06a7.13 7.13 0 0 0 0-10.09z"/><path d="m15.74 23.52-3 3a5.13 5.13 0 0 1 -7.24-7.28l5.06-5.06a5.14 5.14 0 0 1 7.26 0 4.82 4.82 0 0 1 1 1.49 1 1 0 0 0 1.82-.84 7.14 7.14 0 0 0 -11.49-2.07l-5.06 5.06a7.13 7.13 0 1 0 10.09 10.09l3-3a1 1 0 0 0 0-1.42 1 1 0 0 0 -1.44.03z"/></svg>
             </span>
             Copy Link
           </a>
@@ -16,11 +16,11 @@
      
       <h2  role="heading" aria-label="enter Personal data" class="text-xl font-semibold leading-7 text-gray-800 mt-10">Details</h2>
       <div class="mt-8 md:flex items-center">
-          <div class="flex flex-col w-full">
+          <div class="flex flex-col w-full md:mr-6">
               <label class="mb-3 text-sm leading-none text-gray-800">Bill  From</label>
               <input type="text" tabindex="0" aria-label="Enter first name" class="bg-gray-100 text-sm font-medium focus:ring-blue-500 focus:border-blue-500 text-gray-800 p-3 border rounded border-gray-200" value="Reza Raharjo" />
           </div>
-          <div class="flex flex-col w-full md:ml-12 md:mt-0 mt-8">
+          <div class="flex flex-col w-full md:mt-0 mt-8">
               <label class="mb-3 text-sm leading-none text-gray-800">Bill To</label>
               <input type="text" tabindex="0" aria-label="Enter last name" class="bg-gray-100 text-sm font-medium leading-none focus:ring-blue-500 focus:border-blue-500 text-gray-800 p-3 border rounded border-gray-200" value="Smith" />
           </div>
@@ -38,9 +38,9 @@
         </div>
     </div>
       <div class="mt-8 md:flex items-center">
-          <div class="flex flex-col w-full">
+          <div class="flex flex-col w-full md:mr-6">
             <label class="mb-3 text-sm leading-none text-gray-800">Issued On</label>
-            <div class="relative max-w-sm">
+            <div class="relative">
               <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
                 <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
@@ -49,9 +49,9 @@
               <input datepicker type="date" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 " placeholder="Select date">
             </div>
           </div>
-          <div class="flex flex-col w-full md:ml-12 md:mt-0 mt-8">
+          <div class="flex flex-col w-full md:mt-0 mt-8">
             <label class="mb-3 text-sm leading-none text-gray-800">Issued On</label>
-            <div class="relative max-w-sm">
+            <div class="relative">
               <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
                 <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
@@ -184,7 +184,7 @@
         </div>     
       </div>
       <div class="mt-2 md:flex items-end justify-end content-end">
-        <button role="button" aria-label="Create Invoice" class="flex items-center py-4 px-7 focus:outline-none bg-blue-600 text-white border rounded border-gray-400 mt-7 hover:bg-blue-800  focus:ring-2 focus:ring-offset-2 focus:ring-gray-700">
+        <button role="button" aria-label="Create Invoice" class="flex items-center py-4 px-7 focus:outline-none transition-all bg-blue-600 text-white border rounded border-gray-400 mt-7 hover:bg-blue-800  focus:ring-2 focus:ring-offset-2 focus:ring-gray-700">
             <span class="text-sm font-medium text-center capitalize">Create Invoice</span>
             <svg class="mt-1 ml-3" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.01 3H0V5H8.01V8L12 4L8.01 0V3Z" fill="#FFF" />
