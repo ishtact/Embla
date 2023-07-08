@@ -6,7 +6,7 @@ import { LayoutComponent } from './layout/layout.component';
 const routes: Routes = [
   { path: 'layout', component: LayoutComponent },
   { path: 'create-invoice', component: CreateInvoiceComponent },
-  { path: '',   redirectTo: '/layout', pathMatch: 'full' },
+  //{ path: '',   redirectTo: '/layout', pathMatch: 'full' },
 ];
 
 @NgModule({
