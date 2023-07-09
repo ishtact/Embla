@@ -1,16 +1,16 @@
 <div class="h-full w-full relative">
-
     <!-- Navigation starts -->
     <!-- Mobile -->
     <div *ngIf="isMenu" id="mobile-nav" class="w-full xl:hidden h-full absolute z-40">
         <div class="bg-gray-800 opacity-50 inset-0 fixed w-full h-full" (click)="isMenu=false"></div>
         <div
-            class="w-64 z-20 absolute left-0 z-40 top-0 bg-white shadow flex-col justify-between transition duration-150 ease-in-out h-full">
+            class="w-64 absolute left-0 z-40 top-0 bg-white shadow flex-col justify-between transition duration-150 ease-in-out h-full">
             <div class="flex flex-col justify-between h-full">
                 <div class="px-6 pt-4 overflow-y-auto">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
-                          <img src="https://scontent.fcmb2-2.fna.fbcdn.net/v/t39.30808-6/271133830_3086206718320299_7556243064107732952_n.png?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGH7tjhR5F136FcoU_GLmBjFekIyS_tzA0V6QjJL-3MDV1o9cWV9C2vhrS173txYzc&_nc_ohc=KbsuSECARDUAX9YKcUI&_nc_ht=scontent.fcmb2-2.fna&oh=00_AfAQk14jiFgQgvFsMls0Ot6XXCa6aqbEYUsz5Rwz0XEiyQ&oe=64AD4F61">
+                            <img
+                                src="https://scontent.fcmb2-2.fna.fbcdn.net/v/t39.30808-6/271133830_3086206718320299_7556243064107732952_n.png?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGH7tjhR5F136FcoU_GLmBjFekIyS_tzA0V6QjJL-3MDV1o9cWV9C2vhrS173txYzc&_nc_ohc=KbsuSECARDUAX9YKcUI&_nc_ht=scontent.fcmb2-2.fna&oh=00_AfAQk14jiFgQgvFsMls0Ot6XXCa6aqbEYUsz5Rwz0XEiyQ&oe=64AD4F61">
                         </div>
                         <div id="cross" class="text-gray-800" (click)="isMenu=false">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24"
@@ -65,7 +65,7 @@
                                 </svg>
                             </div>
                             <input
-                                class="bg-gray-100 focus:outline-none rounded w-full text-sm text-gray-500 bg-gray-100 pl-10 py-2"
+                                class="focus:outline-none rounded w-full text-sm text-gray-500 bg-gray-100 pl-10 py-2"
                                 type="text" placeholder="Search" />
                         </div>
                     </div>
@@ -107,12 +107,13 @@
             </div>
         </div>
     </div>
-    <!-- Mobile -->
+    <!-- End Mobile -->
     <nav class="w-full mx-auto bg-white shadow">
         <div class="container px-6 justify-between h-16 flex items-center lg:items-stretch mx-auto">
             <div class="h-full flex items-center">
                 <div class="mr-10 flex items-center">
-                  <img class="embla-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYqkVzmhR-XLEkh6tpDhxNZRswwRgvAVUOzZu1eZZN&s">
+                    <img class="embla-logo"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYqkVzmhR-XLEkh6tpDhxNZRswwRgvAVUOzZu1eZZN&s">
                 </div>
                 <ul class="pr-12 xl:flex items-center h-full hidden">
                     <li
@@ -219,25 +220,25 @@
     </nav>
     <!-- Navigation ends -->
     <!-- Page title starts -->
-    <div class="my-6 lg:my-12 container px-6 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between">
+    <div
+        class="my-6 lg:my-8 container px-6 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between">
         <div>
             <h4 class="text-2xl font-bold leading-tight text-gray-800">Embla Invoice</h4>
         </div>
     </div>
     <!-- Page title ends -->
-   
+
+    <!--Body content start-->
     <div class="container mx-auto lg:grid lg:grid-cols-2 xl:grid-cols-2 gap-6">
-        <div class="rounded border-gray-300 dark:border-gray-700 border-solid border-2 h-auto md:mb-8">
+        <div
+            class="rounded border-gray-300 dark:border-gray-700 border-solid max-sm:border-b-1 md:border-2 h-auto md:mb-8">
             <app-create-invoice></app-create-invoice>
         </div>
-        <div class="rounded border-gray-300 dark:border-gray-700 border-solid border-2 h-auto md:mb-8">
+        <div class="max-sm:border-b-4 max-sm:mt-8 md:hidden"></div>
+        <div class="rounded border-gray-300 dark:border-gray-700 border-solid md:border-2 h-auto md:mb-8">
             <app-send-invoice></app-send-invoice>
-        </div>  
+        </div>
     </div>
+    <!--Body content end-->
 
 </div>
-  
-
-
-  
-  
